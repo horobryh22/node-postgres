@@ -9,6 +9,10 @@ app.use(cors());
 app.use(express.json());
 app.use('/api', entityRouter);
 
+app.get('/', (req, res) => {
+    res.send('Server is working!')
+})
+
 app.listen(PORT, () => {
     console.log(`The server started on port ${PORT}`);
 });
