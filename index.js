@@ -10,5 +10,5 @@ app.use(express.json());
 app.use('/api', entityRouter);
 
 app.listen(PORT, () => {
-    console.log(`server started on port ${PORT}`);
+    console.log(`The server started on port ${PORT}`);
 });
